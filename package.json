@@ -1,0 +1,15 @@
+{
+  "name": "homework-4",
+  "version": "1.0.0",
+  "description": "Brief description of your what your project is about and why you chose that topic.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "PORT=3008 nodemon server.js",
+    "wndev": "set PORT=3008 && nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

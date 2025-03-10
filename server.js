@@ -15,7 +15,7 @@ function app(req, res) {
   if (fs.existsSync(reqWebFile.reqResource)) {
     res.writeHead(200, { "Content-Type": reqWebFile.getMimeType() });
     res.write(fs.readFileSync(reqWebFile.reqResource));
-  } else {
+  } else {q
     res.writeHead(404, { "Content-Type": "text/html" });
     res.write(fs.readFileSync(WebFile.errorPage));
   }

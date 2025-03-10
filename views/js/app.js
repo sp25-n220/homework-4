@@ -1,6 +1,6 @@
 import {jsPDF} from "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.0.0/jspdf.es.js";
 
-class GeneratePdf {
+export class GeneratePdf {
     pdfDoc; 
 
     position = {
@@ -90,17 +90,17 @@ class GeneratePdf {
 }
 
 
-const myPdf = new GeneratePdf("pdf-preview");
+// const myPdf = new GeneratePdf("pdf-preview");
 
-myPdf.addBackground({ fontSize: 16, color: "red" });
-myPdf.addHeader("Title", "white");
-myPdf.addBackground();
-myPdf.addText("Hello to all", "white");
+// myPdf.addBackground({ fontSize: 16, color: "red" });
+// myPdf.addHeader("Title", "white");
+// myPdf.addBackground();
+// myPdf.addText("Hello to all", "white");
 
-myPdf.newPage();
-myPdf.addHeader("This is the second page");
+// myPdf.newPage();
+// myPdf.addHeader("This is the second page");
 
-myPdf.showPdf();
+// myPdf.showPdf();
 
 
-console.log("hello", jsPDF); 
+// console.log("hello", jsPDF); 

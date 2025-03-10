@@ -1,4 +1,6 @@
-class ticketEventPdf extends generatePdf {
+import { GeneratePdf } from './app.js';  
+
+class ticketEventPdf extends GeneratePdf {
     
     constructor(domRefId) {
         super(domRefId);

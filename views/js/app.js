@@ -1,7 +1,5 @@
 import {jsPDF} from "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.0.0/jspdf.es.js";
 
-
-
 class GeneratePdf {
     pdfDoc; 
 
@@ -40,6 +38,7 @@ class GeneratePdf {
     addHeader(text, color = "black") {
         this.pdfDoc.setFontSize(18);
         this.pdfDoc.setTextColor(color);
+        this.position.y += 10;
         this.pdfDoc.text(text, this.position.x, this.position.y);
         this.pdfDoc.setTextColor("black");
         this.pdfDoc.setFontSize(14);
@@ -80,9 +79,9 @@ class GeneratePdf {
         this.pdfDoc.setFillColor(color);
         this.pdfDoc.rect(
         this.position.x,
-        this.position.y - (offset * 3) / 4,
+        this.position.y - (offSet * 3) / 4,
         100,
-        offset,
+        offSet,
         "F"
     );
         this.pdfDoc.setFillColor("white");
@@ -90,17 +89,16 @@ class GeneratePdf {
 
 }
 
-const myPdf = new GeneratePdf();
 
-document.querySelector("#pdf-preview").src = myPdf.getPdfUrl();
+const myPdf = new GeneratePdf("pdf-preview");
 
-myPdf.addBackground({ fontSize: 16, color: "blue" });
+myPdf.addBackground({ fontSize: 16, color: "red" });
 myPdf.addHeader("Title", "white");
 myPdf.addBackground();
-myPdf.addText("Something else is amidst", "white");
+myPdf.addText("Hello to all", "white");
 
 myPdf.newPage();
-myPdf.addHeader("Second Page!!!");
+myPdf.addHeader("This is the second page");
 
 myPdf.showPdf();
 

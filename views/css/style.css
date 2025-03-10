@@ -46,3 +46,10 @@ nav {
     }
   }
 }
+
+
+#pdf-preview {
+  width: 75%;
+  height: 80vh; 
+  border: 1px solid #ccc;
+}

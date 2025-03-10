@@ -15,17 +15,20 @@ function app(req, res) {
   if (fs.existsSync(reqWebFile.reqResource)) {
     res.writeHead(200, { "Content-Type": reqWebFile.getMimeType() });
     res.write(fs.readFileSync(reqWebFile.reqResource));
-  } else {q
+  } else {
     res.writeHead(404, { "Content-Type": "text/html" });
     res.write(fs.readFileSync(WebFile.errorPage));
   }
-
+ 
   res.end();
+
 }
 
 const server = http.createServer(app);
 
+
 const port = process.env.PORT || 3445;
 server.listen(port);
+console.log(`Server running at http://localhost:${port}`);
 
 console.log(`http://localhost:${port}`);

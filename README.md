@@ -19,3 +19,4 @@ List color palette used and rationale for top level layout decisions.
 ### Members & Responsibilities
 
 Joseph Roper - President 
+Elias Arriaga - Analyist 

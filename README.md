@@ -43,8 +43,13 @@ Joseph Roper - President:
     - Imported files as well
 
 Kieren Foulk - Designer 
+    - Global styling
+    - certification.html
+    - certification.js
 
 Elias Arriaga - Analyist
+    - career.js
+
 
 Haven Hamelin - Scrum Master
 

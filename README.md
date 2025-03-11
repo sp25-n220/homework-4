@@ -17,7 +17,7 @@ This is what the assignment is about!
 
 Gitub link
 
-[Assignment-4 Github](https://github.com/sp25-n220/homework-4)
+[Assignment-4 Github](https://sp25-n220.github.io/homework-4/views)
 
 ### Key Takeaways
 

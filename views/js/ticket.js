@@ -1,3 +1,5 @@
+// Joseph Roper work
+
 import { GeneratePdf } from './app.js';  
 
 // extends from app.js
@@ -7,7 +9,7 @@ export class ticketEventPdf extends GeneratePdf {
     constructor(domRefId) {
         super(domRefId);
     }
-    
+
     createTicketCode() {
 
         // Create a variable with all capital letters and numbers

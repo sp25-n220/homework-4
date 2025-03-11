@@ -2,11 +2,18 @@
 
 ### Project Summary
 
-Brief description of your what your project is about and why you chose that topic.
+Assignment 4 is all about collaboration and OOP techniques. This project allows us to collaborate using Git pushing our own code and pulling others to update our own local projects. Outside of this, we learn powerful OOP techniques. For example, we have a parent class GeneratePdf and we extend that to a child class for example ticketEventPdf. This technique is called inheritence. We allow the child to have all of the properties the parent does but it is a more focused class. 
+    - Analogy: 
+        - Genre -> Book
+        - In this example, a genre will have a bunch of broad details. But a book will incorporate those details and tell a story. Like fiction is the genre and the book designs a fictional world. 
+
+The jsPDF module is extremely powerful as well. It allows for dynamic pdfs, handle user inputs, and you can download and save those pdfs! 
+
+This is what the assignment is about!
 
 ### Live Link
 
-[Blog Page](https://sp25-n220.github.io/homework-4/views/index.html)
+[Assignment-4](https://sp25-n220.github.io/homework-4/views/index.html)
 
 ### Key Takeaways
 
@@ -25,7 +32,13 @@ List color palette used and rationale for top level layout decisions.
 
 ### Members & Responsibilities
 
-Joseph Roper - President
+Joseph Roper - President:
+    - ticket.js
+    - ticketCreation.js
+    - ticket.html
+    - Imported files as well
+
+Kieren Foulk - Designer 
 
 Elias Arriaga - Analyist
 

@@ -1,3 +1,4 @@
+// Joseph Roper work
 import { ticketEventPdf } from './ticket.js';
 
 //Declare ticketPdf globally to use for both listeners
@@ -33,7 +34,7 @@ document.getElementById('generate-ticket').addEventListener('click', () => {
     //Create a variable for the choise of the event
     const eventDate = getEventDate(eventName);
     
-    
+
     if (userName && eventName) {
         
         ticketPdf = new ticketEventPdf("ticket-pdf");

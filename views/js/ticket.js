@@ -1,11 +1,13 @@
 import { GeneratePdf } from './app.js';  
 
+// extends from app.js
 export class ticketEventPdf extends GeneratePdf {
     
+    //Create a super constructor that passes the 
     constructor(domRefId) {
         super(domRefId);
     }
-
+    
     createTicketCode() {
 
         // Create a variable with all capital letters and numbers
@@ -26,16 +28,17 @@ export class ticketEventPdf extends GeneratePdf {
         
     }
 
+    //Create a ticket with the given parameters
     createTicket = (eventName, eventDate, userName) =>  {
 
         // this.resetPdf();
 
         
-        this.addHeader(`Event: ${eventName}`, "red");
+        this.addHeader(`Event: ${eventName}`, "maroon");
         this.position.y += 20;
         
         //Create ticket date and name line and append to pdf
-        this.addText(`Date: ${eventDate}`, "maroon");    
+        this.addText(`Date: ${eventDate}`, "black");    
         this.addText(`Name: ${userName}`, "black");     
         
         //Create a ticket code and append to pdf

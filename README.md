@@ -15,7 +15,7 @@ This is what the assignment is about!
 
 [Assignment-4](https://homework-4-98db.onrender.com)
 
-Gitub link
+Github link
 
 [Assignment-4 Github](https://sp25-n220.github.io/homework-4/views)
 

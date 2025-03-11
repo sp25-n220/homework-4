@@ -6,7 +6,7 @@ Brief description of your what your project is about and why you chose that topi
 
 ### Live Link
 
-[Blog Page](https://{username}.github.io/{reponame}/homework-2)
+[Blog Page](https://sp25-n220.github.io/homework-4/views/index.html)
 
 ### Key Takeaways
 

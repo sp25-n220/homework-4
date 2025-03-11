@@ -48,8 +48,88 @@ nav {
 }
 
 
-#pdf-preview {
-  width: 75%;
-  height: 80vh; 
-  border: 1px solid #ccc;
+
+
+
+
+
+
+
+
+/* Ticket CSS */
+#ticket-pdf {
+  width: 100%;
+  height: 100vh; 
+  /* border: 1px solid #ccc; */
+  
 }
+
+.ticket-holder{ 
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.event{
+  margin: 30px;
+}
+
+#event-selection {
+    background-color: black;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 15px;
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 5px;
+    width: 250px;
+    
+}
+
+
+.userName{
+  margin: 10px;
+}
+
+.userName label {
+  font-size: 16px;
+  color: white;
+  
+}
+
+.userName input::placeholder {
+  font-size: 16px;
+  color: white;
+}
+
+.userName input {
+  font-size: 16px;
+  color: white;
+  width: 250px;
+  padding: 10px;
+  border: 3px solid white;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.button{
+  margin: 10px;
+}
+
+.button button {
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 3px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+
+}
+
+

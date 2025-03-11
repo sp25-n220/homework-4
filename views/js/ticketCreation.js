@@ -32,7 +32,7 @@ document.getElementById('generate-ticket').addEventListener('click', () => {
 
     if (userName && eventName) {
         
-        ticketPdf = new ticketEventPdf("pdf-preview");
+        ticketPdf = new ticketEventPdf("ticket-pdf");
         ticketPdf.createTicket(eventName, eventDate, userName);
 
         //Clear all user inout and reset the selections value to Concert

@@ -6,17 +6,18 @@ Brief description of your what your project is about and why you chose that topi
 
 ### Live Link
 
-[Blog Page](https://{username}.github.io/{reponame}/homework-2)  
+[Blog Page](https://{username}.github.io/{reponame}/homework-2)
 
 ### Key Takeaways
 
 Understanding of why we are doing this project
 
-### Design Choices 
+### Design Choices
 
 List color palette used and rationale for top level layout decisions.
 
 ### Members & Responsibilities
 
-Joseph Roper - President 
-Elias Arriaga - Analyist 
+Joseph Roper - President
+
+Elias Arriaga - Analyist

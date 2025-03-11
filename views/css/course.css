@@ -1,0 +1,27 @@
+.course {
+    width: 70%;
+    margin: 0 auto;
+    background-color: wheat;
+    text-align: center;
+}
+
+.fun-alignment {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.fun-alignment .user-name {
+    text-align: left;
+}
+
+#questions {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#pdf-preview {
+    aspect-ratio: 2/1;
+    width: 100%;
+}

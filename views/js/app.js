@@ -18,6 +18,8 @@ export class GeneratePdf {
 
     domRef = "";
 
+    font;
+
     constructor (domRefId) {
         this.pdfDoc = new jsPDF();
         this.pdfDoc.setFontSize(11);
@@ -25,6 +27,8 @@ export class GeneratePdf {
         if(domRefId) {
             this.domRef = document.querySelector(`#${domRefId}`)
         }
+
+        this.font = this.pdfDoc.getFont();
     }
 
     downloadPdf() {
@@ -35,17 +39,19 @@ export class GeneratePdf {
         return this.pdfDoc.output("bloburl") + "#toolbar = 1";
     }
 
-    addHeader(text, color = "black") {
+    addHeader(text, color="black", family=this.font.fontName, style=this.font.fontStyle) {
         this.pdfDoc.setFontSize(18);
         this.pdfDoc.setTextColor(color);
+        this.pdfDoc.setFont(family, style);
         this.position.y += 10;
         this.pdfDoc.text(text, this.position.x, this.position.y);
         this.pdfDoc.setTextColor("black");
         this.pdfDoc.setFontSize(14);
     }
 
-    addText(text, color = "black") {
+    addText(text, color="black", family=this.font.fontName, style=this.font.fontStyle) {
         this.pdfDoc.setTextColor(color);
+        this.pdfDoc.setFont(family, style);
         this.pdfDoc.text(text, this.position.x, this.position.y);
         this.pdfDoc.setTextColor("black");
         this.position.y += 6;

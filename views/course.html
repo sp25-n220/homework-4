@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Course</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/course.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/ticket">Ticket Event</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="course">
+    <div class="fun-alignment">
+      <h1>Business Certificate Completion Quiz</h1>
+      
+      <div class="user-name">
+        <label for="user-name">Enter Your Name:</label>
+        <input type="text" id="user-name" placeholder="Your Name..." />
+      </div>
+    </div>
+
+    <p>(Select an answer for both questions to view pdf buttons)</p>
+    <form action="#" id="questions">
+      <p>What is Money?</p>
+      <input type="radio" id="html" name="money" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="money" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" class="correct-answer" name="money" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+      <br>
+      <br> 
+      <p>How to fix the economy?</p>
+      <input type="radio" id="age1" class="correct-answer" name="economy" value="30">
+      <label for="age1">0 - 30</label><br>
+      <input type="radio" id="age2" name="economy" value="60">
+      <label for="age2">31 - 60</label><br>  
+      <input type="radio" id="age3" name="economy" value="100">
+      <label for="age3">61 - 100</label><br><br>
+      </form>
+    </form>
+
+    <div class="button" style="visibility: hidden;">
+      <button id="generate-certificate">View your Certificate!</button>
+      <button id="download-certificate">Download Your Certificate!</button>
+    </div>
+    <section>
+      <iframe id="pdf-preview" src="" frameborder="0"></iframe>
+    </section>
+  </div>
+<script type="module" src="js/course.js"></script>
+</body>
+</html>

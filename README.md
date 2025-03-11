@@ -28,3 +28,5 @@ List color palette used and rationale for top level layout decisions.
 Joseph Roper - President
 
 Elias Arriaga - Analyist
+
+Haven Hamelin - Scrum Master

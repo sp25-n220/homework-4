@@ -43,3 +43,22 @@ Kieren Foulk - Designer
 Elias Arriaga - Analyist
 
 Haven Hamelin - Scrum Master
+
+
+
+
+
+
+### Running this assignment 
+
+To run this assignment 
+
+- Install npm
+
+`npm i`
+
+- Run the server
+
+`npm run start`
+
+- Then in your browser search http://localhost:3008

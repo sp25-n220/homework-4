@@ -1,15 +1,53 @@
 import { GeneratePdf } from './app.js';  
 
-class ticketEventPdf extends GeneratePdf {
+export class ticketEventPdf extends GeneratePdf {
     
     constructor(domRefId) {
         super(domRefId);
     }
 
-    createTicket(eventName, eventDate, name) {
-        this.reset();
+    createTicketCode() {
+
+        // Create a variable with all capital letters and numbers
+        const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+        // Empty ticket
+        let ticketCode = '';
+
+        // Loop through available characters 7 times and assign a random character and put it in the ticket string
+        for (let i = 0; i < 7; i++) {
+            ticketCode += characters.charAt(Math.floor(Math.random() * characters.length));
+
+            console.log(ticketCode);
+        }
+
+        return ticketCode;
 
         
+    }
+
+    createTicket = (eventName, eventDate, userName) =>  {
+
+        // this.resetPdf();
+
+        
+        this.addHeader(`Event: ${eventName}`, "red");
+        this.position.y += 20;
+        
+        //Create ticket date and name line and append to pdf
+        this.addText(`Date: ${eventDate}`, "maroon");    
+        this.addText(`Name: ${userName}`, "black");     
+        
+        //Create a ticket code and append to pdf
+        const ticketNumber = this.createTicketCode();
+        this.addText(`Ticket Number: ${ticketNumber}`, "black");
+
+        //Creates space in between ticket generations
+        this.position.y += 20;
+        
+        this.showPdf();
+        
+
     }
 
 } 

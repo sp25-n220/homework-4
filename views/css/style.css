@@ -4,9 +4,14 @@
   box-sizing: border-box;
 }
 
+/* Adding styling to center items on each page */
 html,
 body {
   height: 100%;
+  text-align: center; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -16,17 +21,20 @@ h4,
 h5,
 h6,
 p {
-  margin-bottom: 16px;
+  margin: 20px;
 }
 
+/*center nav elements*/
 nav {
   background-color: #7f3641;
   padding: 12px;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
 
   ul {
     height: 50px;
     list-style: none;
-
     display: flex;
     align-items: center;
     gap: 40px;
@@ -44,6 +52,9 @@ nav {
       text-decoration: none;
       color: white;
     }
+    li a:hover {
+      font-weight:800; /* Bold on hover */
+  }
   }
 }
 

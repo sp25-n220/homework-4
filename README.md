@@ -71,3 +71,20 @@ To run this assignment
 `npm run start`
 
 - Then in your browser search http://localhost:3008
+
+
+### Documentation for Joseph Roper 
+
+As President I wrote down members and responsibilities as well as the project overview.
+
+For my specific scenario I created the ticket.js and ticketCreation.js. This was a fun challenge! I liked using inheritance because all methods were available to me. I did not have to write any "new" pdf code in a sense. All I had to do was write the logic for my pdf creation and for my ticket creation. The way I chose to do this was in two parts
+
+- First, I decided to create one javascript file for just the pdf class. This way it was much easier to split up code from event listeners to the actual pdf logic
+
+- Second, I created the ticketCreation file in order to add event listeners to the page. This was extremely handy because it made my code super easy to read. By exporting the pdf, I was able to use some of the properties and create a ticket.
+
+For example 
+
+`ticketPdf = new ticketEventPdf("ticket-pdf");`
+
+This creates a new instance of the pdf file in ticket.js which allows me to create a new ticket in the next line!

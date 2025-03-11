@@ -25,16 +25,33 @@
       </ul>
     </nav>
 
-    <section>
-      <button id="generate-pdf">Generate PDF</button>
-      <button id="preview-pdf">Preview PDF</button>
-      <button id="download-pdf">Download PDF</button>
-    </section>
+    <div class="ticket-holder">
+      <h1>Choose the Event you would like to Attend!</h1>
+      
+      <div class="event">
+        <select id="event-selection">
+          <option value="Concert" >Concert at 3/12/2025</option>
+          <option value="Seminar" >Seminar at 3/13/2025</option>
+        </select>
+      </div>
+      
+      
+      <div class="userName">
+        <label for="userName">Enter Your Name:</label>
+        <input type="text" id="userName" placeholder="Your Name..." />
+      </div>
+     
+      <div class="button">
+        <button id="generate-ticket">View your Ticket!</button>
+        <button id="download-ticket">Download Your Ticket!</button>
+      </div>
 
+    </div>
+   
     <section>
       <iframe id="pdf-preview" src="" frameborder="0"></iframe>
     </section>
 
-    <script type="module" src="js/ticket.js"></script>
+  <script type="module" src="js/ticketCreation.js"></script>
   </body>
 </html>
